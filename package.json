@@ -12,7 +12,7 @@
     "mongoose": "^4.4.15",
     "morgan": "^1.7.0",
     "use-strict": "^1.0.1",
-    "snyk": "^1.190.0"
+    "snyk": "^1.191.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
