@@ -11,7 +11,8 @@
     "express": "^4.13.4",
     "mongoose": "^4.4.15",
     "morgan": "^1.7.0",
-    "use-strict": "^1.0.1"
+    "use-strict": "^1.0.1",
+    "snyk": "^1.190.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -20,10 +21,13 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "mocha --timeout 10000"
+    "test": "mocha --timeout 10000",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/glaucia86/tutorial-crud-nodejs-mocha-chai"
-  }
+  },
+  "snyk": true
 }
