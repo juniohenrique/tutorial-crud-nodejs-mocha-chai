@@ -23,4 +23,5 @@ jobs:
           key: v1-deps-{{ checksum "package.json" }}
       - run: yarn snyk-protect
       - run: yarn prepublish
+      - run: yarn start
       - run: yarn test
